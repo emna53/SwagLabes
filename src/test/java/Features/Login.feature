@@ -1,5 +1,6 @@
 Feature: Connexion au site SauceDemo
 @run1 @smoke
+  @regression
   Scenario: Tentative de connexion avec des identifiants valides
     Given Je suis sur la page de connexion de SauceDemo
     When Je saisis le nom d'utilisateur "standard_user"

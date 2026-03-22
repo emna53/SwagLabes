@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/java/Features/Login.feature",
         // Chemin vers vos Step Definitions et Hooks
         glue = "Steps",
-        tags = "not @smoke",
+        tags = "@regression",
 
         // Plugins pour la génération des rapports
         plugin = {
@@ -25,4 +25,5 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 public class TestRunner {
+
 }
