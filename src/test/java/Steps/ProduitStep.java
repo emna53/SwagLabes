@@ -37,8 +37,9 @@ public class  ProduitStep {
 
 
         //System.setProperty("webdriver.edge.driver", "C:/Users/HP/Downloads/msedgedriver.exe");
-        driver=new ChromeDriver();
-        driver.manage().window().maximize();
+       // driver=new ChromeDriver();
+        //driver.manage().window().maximize();
+        this.driver=Hook.driver;
         driver.get("https://www.saucedemo.com/");
         loginPage =new LoginPage(driver);
         produitPage=new ProduitPage(driver);

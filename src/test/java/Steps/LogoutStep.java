@@ -20,8 +20,9 @@ public class LogoutStep {
 
     @Given("je suis sur la page d acceuil")
     public void jeSuisSurLaPageDAcceuil() {
-        driver=new ChromeDriver();
-        driver.manage().window().maximize();
+        //driver=new ChromeDriver();
+       // driver.manage().window().maximize();
+        this.driver=Hook.driver;
         logoutPage =new LogoutPage(driver);
         driver.get("https://www.saucedemo.com/");
         loginPage =new LoginPage(driver);

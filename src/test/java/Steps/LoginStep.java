@@ -18,8 +18,8 @@ import static org.junit.Assert.assertTrue;
 public class LoginStep {
 
 
-    //WebDriver driver;
-    WebDriver driver=Hook.driver;
+    WebDriver driver;
+    //WebDriver driver=Hook.driver;
     LoginPage loginPage;
     LogoutPage logoutPage;
 
